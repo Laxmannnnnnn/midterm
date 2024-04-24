@@ -1,4 +1,4 @@
-/* Define CSS variables for the primary, secondary, and accent colors */
+
 :root {
     --primary-color: #FF7043; /* Deep Orange */
     --secondary-color: #66BB6A; /* Green */
@@ -7,7 +7,7 @@
     --text-color: #333; /* Dark Gray */
   }
   
-  /* Use CSS grid to create a responsive layout */
+ 
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -36,7 +36,7 @@
     animation: fade-in 1s ease-in-out forwards;
   }
   
-  /* Use CSS variables to define the colors for the form elements */
+
   .forum-form {
     background-color: #fff;
     padding: 30px;

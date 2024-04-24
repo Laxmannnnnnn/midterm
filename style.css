@@ -1,0 +1,115 @@
+/* Define CSS variables for the primary, secondary, and accent colors */
+:root {
+    --primary-color: #FF7043; /* Deep Orange */
+    --secondary-color: #66BB6A; /* Green */
+    --accent-color: #29B6F6; /* Light Blue */
+    --background-color: #f7f7f7; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+  }
+  
+  /* Use CSS grid to create a responsive layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Use CSS variables to define the colors for the text and background */
+  body {
+    font-family: 'Source Serif Pro', serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--secondary-color);
+  }
+  
+  /* Use CSS animations to create a fade-in effect for the form */
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .forum-form {
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  /* Use CSS variables to define the colors for the form elements */
+  .forum-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 30px;
+  }
+  
+  .forum-form input,
+  .forum-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .forum-form input:focus,
+  .forum-form textarea:focus {
+    border-color: var(--accent-color);
+  }
+  
+  .forum-form textarea {
+    height: 200px;
+  }
+  
+  .forum-form button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .forum-form button:hover {
+    background-color: #039BE5; /* Darker shade of blue */
+  }
+  
+  /* Use CSS variables to define the colors for the hover effects */
+  .forum-form button:hover,
+  .forum-form button:focus {
+    background-color: #0288d1; /* Lighter shade of blue on hover */
+  }
+  
+  .forum-form input[type="text"],
+  .forum-form input[type="email"],
+  .forum-form textarea {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .forum-form input[type="text"]:focus,
+  .forum-form input[type="email"]:focus,
+  .forum-form textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Lighter shade of blue on focus */
+  }
+  
+  /* Use CSS variables to define the colors for the sections */
+  section {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #fff, #f0f0f0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Styles */
+  .quote-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
